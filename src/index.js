@@ -2,9 +2,9 @@ import 'babel-polyfill';
 import express from 'express';
 import { matchRoutes } from 'react-router-config';
 import Routes from './client/Routes';
-import renderer from './helpers/renderer';
-import createStore from './helpers/createStore';
-import videoRouter from './routes/video-routes';
+import renderer from './client/helpers/renderer';
+import createStore from './client/helpers/createStore';
+import videoRouter from './api/routes/video-routes';
 
 
 const app = express();
