@@ -51,7 +51,6 @@ videoController.findById = (req, res) => {
     try {
         Video.findById(req.params.id)
             .then(video => {
-                console.log(video)
                 res.status(200).send(video);
             });
     } catch (err) {
@@ -63,7 +62,6 @@ videoController.findById = (req, res) => {
 
 videoController.update = (req, res) => {
     try {
-        console.log(req.body);
         const video = {
             title: req.body.title,
             description: req.body.description,

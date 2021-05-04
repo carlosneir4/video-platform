@@ -16,18 +16,26 @@ module.exports = {
                 }
             },
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+            {
                 test: /\.css$/,
                 use: [
-                  'isomorphic-style-loader',
-                  {
-                    loader: 'css-loader',
-                    options: {
-                      importLoaders: 1
-                    }
-                  },
-                  'postcss-loader'
+                    'isomorphic-style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1
+                        }
+                    },
+                    'postcss-loader'
                 ]
-              }
+            }
         ]
-    }
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+      },
 };

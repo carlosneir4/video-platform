@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,7 +81,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.deleteVideo = exports.fetchVideos = exports.uploadVideo = exports.deletingVideo = exports.errorDeletedVideo = exports.successDeletedVideo = exports.listVideoLoadingFailed = exports.listVideoLoading = exports.listVideoLoaded = exports.uploadingVideo = exports.errorUploadedVideo = exports.successUploadedVideo = exports.ERROR_DELETED_VIDEO = exports.SUCCESS_DELETED_VIDEO = exports.DELETING_VIDEO = exports.LIST_VIDEOS_LOADING_FAILED = exports.LIST_VIDEOS_LOADING = exports.LIST_VIDEOS_LOADED = exports.ERROR_UPLOADED_VIDEO = exports.SUCCESS_UPLOADED_VIDEO = exports.UPLOADING_VIDEO = undefined;
 
-var _axios = __webpack_require__(14);
+var _axios = __webpack_require__(15);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -317,23 +317,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _HomePage = __webpack_require__(12);
+var _HomePage = __webpack_require__(13);
 
 var _HomePage2 = _interopRequireDefault(_HomePage);
 
-var _NewVideoPage = __webpack_require__(13);
+var _NewVideoPage = __webpack_require__(14);
 
 var _NewVideoPage2 = _interopRequireDefault(_NewVideoPage);
 
-var _NotFoundPage = __webpack_require__(15);
+var _NotFoundPage = __webpack_require__(16);
 
 var _NotFoundPage2 = _interopRequireDefault(_NotFoundPage);
 
-var _VideoListPage = __webpack_require__(16);
+var _VideoListPage = __webpack_require__(17);
 
 var _VideoListPage2 = _interopRequireDefault(_VideoListPage);
 
-var _App = __webpack_require__(18);
+var _App = __webpack_require__(20);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -351,19 +351,29 @@ exports.default = [_extends({}, _App2.default, {
 })];
 
 /***/ }),
-/* 7 */
+/* 7 */,
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-/* 8 */
+<<<<<<< Updated upstream
+=======
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
 
 /***/ }),
-/* 9 */
+>>>>>>> Stashed changes
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -372,9 +382,9 @@ module.exports = require("redux");
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var admin = __webpack_require__(32);
+var admin = __webpack_require__(34);
 
-var serviceAccount = __webpack_require__(33);
+var serviceAccount = __webpack_require__(35);
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
     databaseURL: "https://video-platform-72110-default-rtdb.firebaseio.com",
@@ -388,13 +398,13 @@ exports.database = database;
 exports.bucket = bucket;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(11);
+__webpack_require__(12);
 
 var _express = __webpack_require__(5);
 
@@ -406,15 +416,15 @@ var _Routes = __webpack_require__(6);
 
 var _Routes2 = _interopRequireDefault(_Routes);
 
-var _renderer = __webpack_require__(20);
+var _renderer = __webpack_require__(22);
 
 var _renderer2 = _interopRequireDefault(_renderer);
 
-var _createStore = __webpack_require__(23);
+var _createStore = __webpack_require__(25);
 
 var _createStore2 = _interopRequireDefault(_createStore);
 
-var _videoRoutes = __webpack_require__(28);
+var _videoRoutes = __webpack_require__(30);
 
 var _videoRoutes2 = _interopRequireDefault(_videoRoutes);
 
@@ -463,13 +473,13 @@ app.listen(3000, function () {
 });
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("babel-polyfill");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -497,7 +507,7 @@ var Home = function Home() {
         _react2.default.createElement(
             'p',
             null,
-            'Check out these awesome Videos'
+            'Video Platform allow you to upload and store your favorite videos'
         )
     );
 };
@@ -507,7 +517,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -521,15 +531,24 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _templateObject = _taggedTemplateLiteral(['\n  text-align: center;\n  border-radius: 1em;\n  color: #3c4043;\n  padding: 0.3em;\n  margin: 5% 10%;\n  font-size: 20px;\n  background: #fff;\n  border: 1px solid #ccc;\n  border-color: rgba(0,0,0,.2);\n  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); \n  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);\n\n  @media (max-width: 700px) {\n    font-size: 20px;\n  }\n\n  p{\n      color: #ee6e73;\n  }\n\n  .message{\n    color: #ee6e73;\n  }\n\n  input[type=button] {\n    padding: 3px ;\n    font-size: 20px;\n    color: #fff;\n    background-color: #26a69a;\n    text-align: center;\n    letter-spacing: .5px;\n    -webkit-transition: .2s ease-out;\n    transition: .2s ease-out;\n    cursor: pointer;\n    border-radius:2px;\n    border:1px solid #b2b8ad;\n    display:inline-block;\n    width:40%;\n    font-size:15px;\n    margin-right:2%;\n    padding:9px 24px;\n    text-decoration:none;\n    text-shadow:0px 1px 0px #ced9bf;\n  }\n\n  input[type=file] {\n    display: none;\n  }\n\n  input[type=text] {\n    text-align: center;\n  }\n\n  .custom-file-upload{\n    color: #fff;\n    background-color: #26a69a;\n    text-align: center;\n    letter-spacing: .5px;\n    -webkit-transition: .2s ease-out;\n    transition: .2s ease-out;\n    cursor: pointer;\n    border-radius:2px;\n    border:1px solid #b2b8ad;\n    display:inline-block;\n    font-size:15px;\n    margin-right:2%;\n    padding:9px 24px;\n    text-decoration:none;\n    text-shadow:0px 1px 0px #ced9bf;\n    width:40%;\n  }\n'], ['\n  text-align: center;\n  border-radius: 1em;\n  color: #3c4043;\n  padding: 0.3em;\n  margin: 5% 10%;\n  font-size: 20px;\n  background: #fff;\n  border: 1px solid #ccc;\n  border-color: rgba(0,0,0,.2);\n  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); \n  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);\n\n  @media (max-width: 700px) {\n    font-size: 20px;\n  }\n\n  p{\n      color: #ee6e73;\n  }\n\n  .message{\n    color: #ee6e73;\n  }\n\n  input[type=button] {\n    padding: 3px ;\n    font-size: 20px;\n    color: #fff;\n    background-color: #26a69a;\n    text-align: center;\n    letter-spacing: .5px;\n    -webkit-transition: .2s ease-out;\n    transition: .2s ease-out;\n    cursor: pointer;\n    border-radius:2px;\n    border:1px solid #b2b8ad;\n    display:inline-block;\n    width:40%;\n    font-size:15px;\n    margin-right:2%;\n    padding:9px 24px;\n    text-decoration:none;\n    text-shadow:0px 1px 0px #ced9bf;\n  }\n\n  input[type=file] {\n    display: none;\n  }\n\n  input[type=text] {\n    text-align: center;\n  }\n\n  .custom-file-upload{\n    color: #fff;\n    background-color: #26a69a;\n    text-align: center;\n    letter-spacing: .5px;\n    -webkit-transition: .2s ease-out;\n    transition: .2s ease-out;\n    cursor: pointer;\n    border-radius:2px;\n    border:1px solid #b2b8ad;\n    display:inline-block;\n    font-size:15px;\n    margin-right:2%;\n    padding:9px 24px;\n    text-decoration:none;\n    text-shadow:0px 1px 0px #ced9bf;\n    width:40%;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n'], ['\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  position: fixed;\n  animation: ', ' 1s linear infinite;\n  transform: translateZ(0);\n  left: 50%;\n  border-top: 2px solid grey;\n  border-right: 2px solid grey;\n  border-bottom: 2px solid grey;\n  border-left: 4px solid black;\n  background: transparent;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n'], ['\n  position: fixed;\n  animation: ', ' 1s linear infinite;\n  transform: translateZ(0);\n  left: 50%;\n  border-top: 2px solid grey;\n  border-right: 2px solid grey;\n  border-bottom: 2px solid grey;\n  border-left: 4px solid black;\n  background: transparent;\n  width: 24px;\n  height: 24px;\n  border-radius: 50%;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  input{\n    width: 70%;\n  }\n\n  textarea{\n    width: 70%;\n  }\n\n  span{\n    width: 70%;\n  }\n'], ['\n  input{\n    width: 70%;\n  }\n\n  textarea{\n    width: 70%;\n  }\n\n  span{\n    width: 70%;\n  }\n']);
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(3);
 
+var _reactHelmet = __webpack_require__(4);
+
 var _actions = __webpack_require__(1);
 
-var _reactHelmet = __webpack_require__(4);
+var _styledComponents = __webpack_require__(7);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -538,6 +557,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Conatiner = _styledComponents2.default.div(_templateObject);
+var rotate360 = (0, _styledComponents.keyframes)(_templateObject2);
+
+var Spinner = _styledComponents2.default.div(_templateObject3, rotate360);
+var Row = _styledComponents2.default.div(_templateObject4);
 
 var NewVideo = function (_Component) {
   _inherits(NewVideo, _Component);
@@ -555,9 +582,11 @@ var NewVideo = function (_Component) {
       }
     };
     _this2.inputFile = _react2.default.createRef();
+    _this2.spanFile = _react2.default.createRef();
     _this2.handleInputChange = _this2.handleInputChange.bind(_this2);
     _this2.handleTextAreaChange = _this2.handleTextAreaChange.bind(_this2);
     _this2.handleFileSelected = _this2.handleFileSelected.bind(_this2);
+    _this2.handleFileButtonClick = _this2.handleFileButtonClick.bind(_this2);
     _this2.uploadVideo = _this2.uploadVideo.bind(_this2);
     return _this2;
   }
@@ -580,15 +609,7 @@ var NewVideo = function (_Component) {
     key: 'loading',
     value: function loading() {
       if (this.props.newVideo.videoLoading) {
-        return _react2.default.createElement(
-          'div',
-          { className: 'progress' },
-          _react2.default.createElement(
-            'div',
-            { className: 'indeterminate' },
-            ' cargando ...'
-          )
-        );
+        return _react2.default.createElement(Spinner, null);
       }
     }
   }, {
@@ -614,6 +635,13 @@ var NewVideo = function (_Component) {
       this.setState({
         video: _extends({}, this.state.video, { file: e.target.files[0] })
       });
+
+      this.spanFile.current.value = e.target.files[0].name;
+    }
+  }, {
+    key: 'handleFileButtonClick',
+    value: function handleFileButtonClick(e) {
+      this.inputFile.current.click();
     }
   }, {
     key: 'uploadVideo',
@@ -622,11 +650,9 @@ var NewVideo = function (_Component) {
 
       var _this = this;
       this.props.uploadVideo(this.state.video).then(function (response) {
-        console.log("intento borrar state");
         _this3.setState({
           video: _extends({}, _this3.state.video, { title: '', description: '', file: '' })
         });
-        _this3.inputFile.current.value = '';
       });
     }
   }, {
@@ -634,59 +660,50 @@ var NewVideo = function (_Component) {
     value: function render() {
       var message = this.props.newVideo.createMessage;
       return _react2.default.createElement(
-        'div',
-        { className: 'container' },
+        Conatiner,
+        null,
         this.head(),
         _react2.default.createElement(
-          'div',
-          { className: 'row' },
+          Row,
+          null,
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-field col s12' },
-              _react2.default.createElement('input', { placeholder: 'Title', id: 'title', type: 'text', className: 'validate', onChange: this.handleInputChange, value: this.state.video.title })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-field col s12' },
-              _react2.default.createElement('textarea', { id: 'textarea1', className: 'materialize-textarea', onChange: this.handleTextAreaChange, value: this.state.video.description })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'input-field col s6' },
-              _react2.default.createElement('input', { type: 'file', onChange: this.handleFileSelected, ref: this.inputFile })
-            )
+            'p',
+            null,
+            'UPLOAD VIDEO'
           )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'input-field col s6' },
-            _react2.default.createElement('input', { type: 'button', onClick: this.uploadVideo, value: 'Upload' })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'input-field col s6' },
-            _react2.default.createElement(
-              'p',
-              null,
-              message
-            )
-          )
+          Row,
+          null,
+          _react2.default.createElement('input', { id: 'title', placeholder: 'Enter title of you video', onChange: this.handleInputChange, value: this.state.video.title })
         ),
-        this.loading()
+        _react2.default.createElement(
+          Row,
+          null,
+          _react2.default.createElement('textarea', { id: 'textarea1', className: 'materialize-textarea', onChange: this.handleTextAreaChange, value: this.state.video.description, placeholder: 'Add some description' })
+        ),
+        _react2.default.createElement(
+          Row,
+          null,
+          _react2.default.createElement('input', { id: 'file-upload', type: 'file', onChange: this.handleFileSelected, ref: this.inputFile }),
+          _react2.default.createElement(
+            'label',
+            { htmlFor: 'file-upload', className: 'custom-file-upload' },
+            'Choose Video'
+          ),
+          _react2.default.createElement('input', { disabled: true, style: { textAlign: 'center' }, ref: this.spanFile, value: this.state.video.file.name || '' })
+        ),
+        _react2.default.createElement(
+          Row,
+          null,
+          _react2.default.createElement('input', { type: 'button', onClick: this.uploadVideo, value: 'Upload' }),
+          _react2.default.createElement(
+            'p',
+            { className: 'message' },
+            message
+          ),
+          this.loading()
+        )
       );
     }
   }]);
@@ -713,13 +730,13 @@ exports.default = {
 };
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("axios");
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -752,7 +769,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -774,9 +791,13 @@ var _actions = __webpack_require__(1);
 
 var _reactHelmet = __webpack_require__(4);
 
-var _reactPlayer = __webpack_require__(17);
+<<<<<<< Updated upstream
+var _reactPlayer = __webpack_require__(19);
+=======
+var _Video = __webpack_require__(18);
+>>>>>>> Stashed changes
 
-var _reactPlayer2 = _interopRequireDefault(_reactPlayer);
+var _Video2 = _interopRequireDefault(_Video);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -805,51 +826,21 @@ var VideoList = function (_Component) {
     }
   }, {
     key: 'handleClick',
-    value: function handleClick(key) {
-
-      console.log("tratando de eliminar", key);
-      this.props.deleteVideo(key);
+    value: function handleClick(idVideo) {
+      if (confirm("Are you sure, you want to delete this video ?")) {
+        this.props.deleteVideo(idVideo);
+      }
     }
   }, {
     key: 'renderVideos',
     value: function renderVideos() {
       var list = this.props.videos.list;
       if (list) {
-        return Object.keys(list).map(function (key, index) {
-          var _this2 = this;
-
+        return Object.keys(list).map(function (idVideo, index) {
           return _react2.default.createElement(
             'li',
             { key: index },
-            _react2.default.createElement(
-              'div',
-              { className: 'container' },
-              _react2.default.createElement(
-                'p',
-                null,
-                'Title:',
-                list[key].title
-              ),
-              _react2.default.createElement(
-                'p',
-                null,
-                'Description:',
-                list[key].description
-              ),
-              _react2.default.createElement(_reactPlayer2.default, { id: key,
-                url: list[key].url,
-                width: '100%',
-                height: '100%',
-                playing: true,
-                controls: true,
-                volume: 1,
-                progressInterval: 5000,
-                pip: true
-              }),
-              _react2.default.createElement('input', { type: 'button', onClick: function onClick() {
-                  return _this2.handleClick(key);
-                }, value: 'delete' })
-            )
+            _react2.default.createElement(_Video2.default, { id: idVideo, video: list[idVideo], handleClick: this.handleClick })
           );
         }, this);
       }
@@ -875,7 +866,6 @@ var VideoList = function (_Component) {
         'div',
         null,
         this.head(),
-        'Here\'s a big list of videos:',
         _react2.default.createElement(
           'ul',
           null,
@@ -915,13 +905,113 @@ exports.default = {
 };
 
 /***/ }),
-/* 17 */
+<<<<<<< Updated upstream
+/* 18 */,
+=======
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _templateObject = _taggedTemplateLiteral(['\n  padding: 0.3em;\n  margin: 5% 15%;\n  padding: 2% 7%;\n  \n  background: #fff;\n  border: 1px solid #ccc;\n  border-color: rgba(0,0,0,.2);\n  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); \n  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);\n\n  @media (max-width: 700px) {\n    font-size: 20px;\n  }\n\n  input[type=button] {\n   \n    font-size: 15px;\n    color: #ee6e73;\n    background-color: #fff0;\n    border:none;\n    display:inline-block;\n  }\n\n\n'], ['\n  padding: 0.3em;\n  margin: 5% 15%;\n  padding: 2% 7%;\n  \n  background: #fff;\n  border: 1px solid #ccc;\n  border-color: rgba(0,0,0,.2);\n  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); \n  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);\n\n  @media (max-width: 700px) {\n    font-size: 20px;\n  }\n\n  input[type=button] {\n   \n    font-size: 15px;\n    color: #ee6e73;\n    background-color: #fff0;\n    border:none;\n    display:inline-block;\n  }\n\n\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    text-align: left;\n    font-size: 24px;\n    font-weight: bold;\n    color:black;\n\n'], ['\n    text-align: left;\n    font-size: 24px;\n    font-weight: bold;\n    color:black;\n\n']),
+    _templateObject3 = _taggedTemplateLiteral(['\n    text-align: left;\n    font-size: 16px;\n    color:#696666;\n'], ['\n    text-align: left;\n    font-size: 16px;\n    color:#696666;\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    text-align: left;\n    font-size: 10px;\n    color:#bdb8b8;\n'], ['\n    text-align: left;\n    font-size: 10px;\n    color:#bdb8b8;\n']),
+    _templateObject5 = _taggedTemplateLiteral(['\n    text-align: right;\n'], ['\n    text-align: right;\n']);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactPlayer = __webpack_require__(19);
+
+var _reactPlayer2 = _interopRequireDefault(_reactPlayer);
+
+var _styledComponents = __webpack_require__(7);
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Conatiner = _styledComponents2.default.div(_templateObject);
+
+var Title = _styledComponents2.default.p(_templateObject2);
+var Description = _styledComponents2.default.p(_templateObject3);
+
+var UploadedDate = _styledComponents2.default.p(_templateObject4);
+var Delete = _styledComponents2.default.div(_templateObject5);
+
+var parserDate = function parserDate(timestamp) {
+    var date = new Date(timestamp);
+    var dd = String(date.getDate()).padStart(2, '0');
+    var mm = String(date.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = date.getFullYear();
+
+    return mm + '/' + dd + '/' + yyyy;
+};
+
+var Video = function Video(_ref) {
+    var id = _ref.id,
+        video = _ref.video,
+        handleClick = _ref.handleClick;
+
+
+    return _react2.default.createElement(
+        Conatiner,
+        null,
+        _react2.default.createElement(
+            Delete,
+            null,
+            _react2.default.createElement('input', { type: 'button', onClick: function onClick() {
+                    return handleClick(id);
+                }, value: 'x', title: 'delete' })
+        ),
+        _react2.default.createElement(
+            Title,
+            null,
+            video.title
+        ),
+        _react2.default.createElement(
+            Description,
+            null,
+            video.description
+        ),
+        _react2.default.createElement(
+            UploadedDate,
+            null,
+            'Uploaded Date :',
+            parserDate(video.createTimestamp)
+        ),
+        _react2.default.createElement(_reactPlayer2.default, { id: id,
+            url: video.url,
+            width: '100%',
+            height: '50%',
+            controls: true,
+            volume: 1,
+            progressInterval: 5000,
+            pip: true
+        })
+    );
+};
+
+exports.default = Video;
+
+/***/ }),
+>>>>>>> Stashed changes
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-player");
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -939,7 +1029,7 @@ var _reactRouterConfig = __webpack_require__(2);
 
 var _actions = __webpack_require__(1);
 
-var _Header = __webpack_require__(19);
+var _Header = __webpack_require__(21);
 
 var _Header2 = _interopRequireDefault(_Header);
 
@@ -961,7 +1051,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -975,7 +1065,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(8);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -986,7 +1076,7 @@ var Header = function Header() {
     null,
     _react2.default.createElement(
       'div',
-      { className: 'nav-wrapper' },
+      { className: 'Header' },
       _react2.default.createElement(
         _reactRouterDom.Link,
         { to: '/', className: 'left brand-logo' },
@@ -1001,7 +1091,7 @@ var Header = function Header() {
           _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/new' },
-            'Add New Video'
+            'New Video'
           )
         ),
         _react2.default.createElement(
@@ -1015,34 +1105,13 @@ var Header = function Header() {
         )
       )
     )
-  )
-  /* <Fragment>
-     <header className={classes.header}>
-       <h1>
-         <Link to="/" className="left brand-logo">
-           Video Platform
-         </Link>
-       </h1>
-       <ul className="right">
-           <li>
-             <Link to="/new">Add New Video</Link>
-           </li>
-           <li>
-             <Link to="/list">List Videos</Link>
-           </li>
-         </ul>
-     </header>
-     <div className={classes['main-image']}>
-       <img src={mealsImage} alt='A table full of delicious food!' />
-     </div>
-   </Fragment>*/
-  ;
+  );
 };
 
 exports.default = Header;
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1056,15 +1125,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _server = __webpack_require__(21);
+var _server = __webpack_require__(23);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(8);
 
 var _reactRedux = __webpack_require__(3);
 
 var _reactRouterConfig = __webpack_require__(2);
 
-var _serializeJavascript = __webpack_require__(22);
+var _serializeJavascript = __webpack_require__(24);
 
 var _serializeJavascript2 = _interopRequireDefault(_serializeJavascript);
 
@@ -1093,23 +1162,23 @@ exports.default = function (req, store, context) {
 
   var helmet = _reactHelmet.Helmet.renderStatic();
 
-  return '\n    <html>\n      <head>\n        ' + helmet.title.toString() + '\n        ' + helmet.meta.toString() + '\n        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">\n        <link rel="stylesheet" type="text/css" href="./styles.css" />\n      </head>\n      <body>\n        <div id="root">' + content + '</div>\n        <script>\n          window.INITIAL_STATE = ' + (0, _serializeJavascript2.default)(store.getState()) + '\n        </script>\n        <script src="bundle.js"></script>\n      </body>\n    </html>\n  ';
+  return '\n    <html>\n      <head>\n        ' + helmet.title.toString() + '\n        ' + helmet.meta.toString() + '\n        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">\n      </head>\n      <body>\n        <div id="root">' + content + '</div>\n        <script>\n          window.INITIAL_STATE = ' + (0, _serializeJavascript2.default)(store.getState()) + '\n        </script>\n        <script src="bundle.js"></script>\n      </body>\n    </html>\n  ';
 };
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("serialize-javascript");
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1119,13 +1188,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _redux = __webpack_require__(8);
+var _redux = __webpack_require__(9);
 
-var _reduxThunk = __webpack_require__(24);
+var _reduxThunk = __webpack_require__(26);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reducers = __webpack_require__(25);
+var _reducers = __webpack_require__(27);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -1139,13 +1208,13 @@ exports.default = function (req) {
 };
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux-thunk");
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1155,13 +1224,13 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _redux = __webpack_require__(8);
+var _redux = __webpack_require__(9);
 
-var _videosResucer = __webpack_require__(26);
+var _videosResucer = __webpack_require__(28);
 
 var _videosResucer2 = _interopRequireDefault(_videosResucer);
 
-var _newVideoReducer = __webpack_require__(27);
+var _newVideoReducer = __webpack_require__(29);
 
 var _newVideoReducer2 = _interopRequireDefault(_newVideoReducer);
 
@@ -1173,7 +1242,7 @@ exports.default = (0, _redux.combineReducers)({
 });
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1244,7 +1313,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1293,7 +1362,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1303,11 +1372,11 @@ var _express = __webpack_require__(5);
 
 var _express2 = _interopRequireDefault(_express);
 
-var _multer = __webpack_require__(29);
+var _multer = __webpack_require__(31);
 
 var _multer2 = _interopRequireDefault(_multer);
 
-var _videoController = __webpack_require__(30);
+var _videoController = __webpack_require__(32);
 
 var _videoController2 = _interopRequireDefault(_videoController);
 
@@ -1340,13 +1409,13 @@ videoRouter.post('/', upload.single('file'), _videoController2.default.create);
 module.exports = videoRouter;
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = require("multer");
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1356,11 +1425,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _video = __webpack_require__(31);
+var _video = __webpack_require__(33);
 
 var _video2 = _interopRequireDefault(_video);
 
-var _firebaseService = __webpack_require__(34);
+var _firebaseService = __webpack_require__(36);
 
 var _firebaseService2 = _interopRequireDefault(_firebaseService);
 
@@ -1413,7 +1482,6 @@ videoController.findAll = function (req, res) {
 videoController.findById = function (req, res) {
     try {
         _video2.default.findById(req.params.id).then(function (video) {
-            console.log(video);
             res.status(200).send(video);
         });
     } catch (err) {
@@ -1424,7 +1492,6 @@ videoController.findById = function (req, res) {
 
 videoController.update = function (req, res) {
     try {
-        console.log(req.body);
         var video = {
             title: req.body.title,
             description: req.body.description,
@@ -1452,7 +1519,7 @@ videoController.delete = function (req, res) {
 exports.default = videoController;
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1462,7 +1529,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _firebase = __webpack_require__(9);
+var _firebase = __webpack_require__(10);
 
 var Video = {};
 
@@ -1508,19 +1575,19 @@ Video.delete = function (id) {
 exports.default = Video;
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("firebase-admin");
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = {"type":"service_account","project_id":"video-platform-72110","private_key_id":"f62ca489d1b452fe7d677e3c1f5f457c0d056dfc","private_key":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCh5SiHqa8mkj63\nsPedsIW4cbmEx/J7icv1o1XYJPziTwvO9xEdwWOgufjpAEAK73WEj8Cj4144agMn\nRmH0v8c71OMw4jyjqkc+yi7R4PkX1tAgLU0Z00iQhV6vDJtVV3cIh7jOwQ1NXqof\nksViZOv8ZzUXXBFVwSRU2hzw5qCU6E2IkbbOiAlGZgNur/YDsXB2stcWMJtzYDCR\nQdsh9d5q4APEU/lfCElYXxZXZ0UVlLyAm9IdKoMSh2g7FW8yAFtyRyprPd6FzQJW\nZEIzUuYCPDXLwjhOgyA4K4c15PsgrlDOKRVxA9uBRH0Kr9hmiiPEXDVdmFZm4Ygb\nX/WHThnLAgMBAAECggEAAblpFxjNjsGb/WTbHkjVA8PiT/G5OWucSn902Jp8PwTM\ngWXMPt7iasHQTtr706H9RG4rhRNU25D1e6OaQ3sPaim4Sbr/Hlcf7yFEImQdAw38\npXsWCSJg8XkaKw8dUGlgES0w4LLZq2tIsJFlnMiqYsPOovMOFDW8Z1LzX/V03GEg\np7XTeAOPYAZNnXLE+k4SbdV2/PhX5XYo3+ELOCxoT7a/UFJGuUiZoxY9KQJtWKpD\n8IbaqLSUJWqx/hwweyNUU4Ybl4S4/HBR/eynep2Vc9++lWehyrQAXZx6xIrvaaEa\nImtJkxy28rfb94ihAvf/BTiSwbnxNw3aEwExZO8k0QKBgQDejdykd2oKTR331Zvw\nbd9/xRtO0zHtLyPxGyNTLmxH3z/MA1wTAj69A2WCgTUgcQwcvnkmET3qZfgMd2YL\n9P2kOqpodHpy2nQ+CwiXl8Yj5yNkA1/soTfP5NErIxMsAz6RNIfoo1KTyLqXnYfJ\nR/17Mbavk9dH3ZE7Kp3ER/QUtwKBgQC6OZ0qmvUkiSuR7I8Y/xAFRFXydpYz1utv\n3BvtdvmjtFCeyevHt0I99amIYD/zGJKr8A5ul5LLSfWI8pBc4h+FBk6YSkURwN+T\nysEckluWSxIMxtZ8szz8HMMdWVjLPYXXP54+QvNGdjmw1dT4hxLlvhLTbopuQzzQ\nqSRWnE/XjQKBgGZlLNQ64P4WVyh1DodDdiZqQNM2lm0DWG0RSGJ4JHe4/rhV/2H7\nkXQTgPvXiOMBQEplVIYwPqV+/u51bO0pbh3GpCrlFIWNfxggqXZd7VsNeJoGd3b/\nAhfTtm07eRGx+HKEkdd2dYLrQvaJEzWHuteYmu4TfmRhS/XF+MqbNHDnAoGAUeGj\nSWh5AWeO0MrC4KrF0IsLf2DFCmYlfzm4zeDSQzi1ehwun9HkPnoV4PDxLWJQm2kh\n716WHOyYGW8OKskCMutjA3Mki3nS1JkB8B4qRxsbBKMpDAuDdRbwc6clc7fJcat3\nWMj3TrQNCcP7sIszs/CvNmgUVgcaZmT4pVx1fsECgYEApIcDfToD+ZbU5sXDX+PK\nJiIDZdj4VGk0E9t5L53G7lQkCLJOKJ9ffELbmI6YaE4nFd4PI5oVX9p6LTASiPeD\nMb9pCZ9MMW0e2KFcSQnaJIt5Uv+YI+k7l03CjEkykib7tq3S0Gh39gx67M4OgDhH\na6Gw/Jo2xfjxtlKS2SzBuzw=\n-----END PRIVATE KEY-----\n","client_email":"firebase-adminsdk-55xap@video-platform-72110.iam.gserviceaccount.com","client_id":"114570759239628699074","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-55xap%40video-platform-72110.iam.gserviceaccount.com"}
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1530,11 +1597,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _firebase = __webpack_require__(9);
+var _firebase = __webpack_require__(10);
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-var _require = __webpack_require__(35),
+var _require = __webpack_require__(37),
     uuidv4 = _require.v4;
 
 var firebaseService = {};
@@ -1589,7 +1656,7 @@ firebaseService.uploadFile = function () {
 exports.default = firebaseService;
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("uuid");
