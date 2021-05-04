@@ -64,10 +64,10 @@ const Video = ({ id, video, handleClick }) => {
 
     return (
         <Conatiner>
-            <Delete><input type="button" onClick={() => handleClick(id)} value="x" title="delete" /></Delete>
-            <Title>{video.title}</Title>
-            <Description>{video.description}</Description>
-            <UploadedDate>Uploaded Date :{parserDate(video.createTimestamp)}</UploadedDate>
+            <Delete><input id="delete-btn" type="button" onClick={() => handleClick(id)} value="x" title="delete" /></Delete>
+            <Title id="title">{video.title}</Title>
+            <Description id="description">{video.description}</Description>
+            <UploadedDate id="date">Uploaded Date :{parserDate(video.createTimestamp)}</UploadedDate>
             <ReactPlayer id={id}
                 url={video.url}
                 width='100%'

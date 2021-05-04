@@ -51818,23 +51818,23 @@ var Video = function Video(_ref) {
         _react2.default.createElement(
             Delete,
             null,
-            _react2.default.createElement('input', { type: 'button', onClick: function onClick() {
+            _react2.default.createElement('input', { id: 'delete-btn', type: 'button', onClick: function onClick() {
                     return handleClick(id);
                 }, value: 'x', title: 'delete' })
         ),
         _react2.default.createElement(
             Title,
-            null,
+            { id: 'title' },
             video.title
         ),
         _react2.default.createElement(
             Description,
-            null,
+            { id: 'description' },
             video.description
         ),
         _react2.default.createElement(
             UploadedDate,
-            null,
+            { id: 'date' },
             'Uploaded Date :',
             parserDate(video.createTimestamp)
         ),

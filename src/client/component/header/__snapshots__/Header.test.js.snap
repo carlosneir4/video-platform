@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Component <Header /> should Snapshot met 1`] = `
+<nav>
+  <div
+    className="Header"
+  >
+    <Link
+      className="left brand-logo"
+      to="/"
+    >
+      Video Platform
+    </Link>
+    <ul
+      className="right"
+    >
+      <li>
+        <Link
+          to="/new"
+        >
+          New Video
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="/list"
+        >
+          List Videos
+        </Link>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;
