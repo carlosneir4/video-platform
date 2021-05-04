@@ -351,28 +351,24 @@ exports.default = [_extends({}, _App2.default, {
 })];
 
 /***/ }),
-/* 7 */,
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = require("styled-components");
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-router-dom");
 
 /***/ }),
-<<<<<<< Updated upstream
-=======
 /* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("redux");
 
 /***/ }),
->>>>>>> Stashed changes
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -791,11 +787,7 @@ var _actions = __webpack_require__(1);
 
 var _reactHelmet = __webpack_require__(4);
 
-<<<<<<< Updated upstream
-var _reactPlayer = __webpack_require__(19);
-=======
 var _Video = __webpack_require__(18);
->>>>>>> Stashed changes
 
 var _Video2 = _interopRequireDefault(_Video);
 
@@ -905,9 +897,6 @@ exports.default = {
 };
 
 /***/ }),
-<<<<<<< Updated upstream
-/* 18 */,
-=======
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1004,7 +993,6 @@ var Video = function Video(_ref) {
 exports.default = Video;
 
 /***/ }),
->>>>>>> Stashed changes
 /* 19 */
 /***/ (function(module, exports) {
 
